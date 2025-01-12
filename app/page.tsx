@@ -9,9 +9,7 @@ import Tokenomics from './Components/Tokenomics';
 import Team from './Components/Team';
 import MoreCoinsData from './Components/MoreCoinsData';
 
-type Props = {};
-
-const page = (props: Props) => {
+const page = () => {
 
   return (
     <div>
