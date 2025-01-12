@@ -1,9 +1,7 @@
 import React from 'react';
 import PieChartDistribution from './PieChartDistribution';
 
-type Props = {};
-
-const Tokenomics = (props: Props) => {
+const Tokenomics = () => {
   return (
     <div className='mt-7 rounded-lg bg-white p-6'>
       <h3 className='font-Poppins text-[22px] font-semibold'>Tokenomics</h3>

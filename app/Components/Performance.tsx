@@ -1,8 +1,6 @@
 import React from 'react';
 import PerformanceChecker from './PerformanceChecker';
 
-type Props = {};
-
 const fundamentals = [
   {
     heading: 'Bitcoin Price',
@@ -65,7 +63,7 @@ const fundamentals = [
   },
 ];
 
-const Performance = (props: Props) => {
+const Performance = () => {
   return (
     <div className='rounded-lg bg-white p-6'>
       <h3 className='font-Poppins text-[22px] font-semibold'>Performance</h3>

@@ -4,9 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import icon from '../../public/assests/3LineIcon.png';
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <nav className='flex items-center justify-between px-5 lg:px-20 py-4 drop-shadow-sm border-b border-gray-200 shadow-sm fixed top-0 left-0 w-full bg-white h-[74px]'>
       <Link href={'/'} className=''>

@@ -4,9 +4,7 @@ import person1 from '../../public/assests/person1.jpg';
 import person2 from '../../public/assests/person2.jpg';
 import person3 from '../../public/assests/person3.jpg';
 
-type Props = {};
-
-const Team = (props: Props) => {
+const Team = () => {
   return (
     <div className='mt-6 rounded-lg bg-white p-6'>
       <h3 className='font-Poppins text-[22px] font-semibold'>Team</h3>

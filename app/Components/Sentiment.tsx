@@ -24,9 +24,7 @@ const data = [
   },
 ];
 
-type Props = {};
-
-const Sentiment = (props: Props) => {
+const Sentiment = () => {
   return (
     <div className='rounded-lg bg-white p-6'>
       <h3 className='mb-4 font-Poppins text-[22px] font-semibold'>Sentiment</h3>
