@@ -1,29 +1,29 @@
-import React from 'react'
+import React from 'react';
 import { Box, Card } from '@mui/joy';
 import Image from 'next/image';
 
 interface Coin {
-    item: {
-      thumb: string;
-      name: string;
-      data: {
-        price_change_percentage_24h: {
-          usd: number;
-        };
-        price: number;
-        sparkline: string;
+  item: {
+    thumb: string;
+    name: string;
+    data: {
+      price_change_percentage_24h: {
+        usd: number;
       };
+      price: number;
+      sparkline: string;
     };
-  }
-  
-type Props = {
-    trendingCoins: Coin[]
+  };
 }
 
-const TrendingCoins = ({trendingCoins}: Props) => {
+type Props = {
+  trendingCoins: Coin[];
+};
+
+const TrendingCoins = ({ trendingCoins }: Props) => {
   return (
     <div className='mt-2'>
-        <Box
+      <Box
         sx={{
           display: 'flex',
           gap: 2,
@@ -55,10 +55,10 @@ const TrendingCoins = ({trendingCoins}: Props) => {
                 padding: '0',
               }}
             >
-              <div className='flex border-[2px] border-gray-300  min-w-44 h-40 flex-col gap-1 rounded-lg lg:p-4 p-2 lg:min-w-72 lg:h-full'>
+              <div className='flex h-40 min-w-44 flex-col gap-1 rounded-lg border-[2px] border-gray-300 p-2 lg:h-full lg:min-w-72 lg:p-4'>
                 <div className='flex items-center gap-1 text-sm lg:text-base'>
                   <Image
-                    className='h-6 w-6 rounded-full lg:mr-2 mr-1'
+                    className='mr-1 h-6 w-6 rounded-full lg:mr-2'
                     width={24}
                     height={24}
                     src={coin?.item?.thumb}
@@ -66,7 +66,7 @@ const TrendingCoins = ({trendingCoins}: Props) => {
                   />
                   <span>{coin?.item?.name}</span>
                   <span
-                    className={`rounded lg:px-2 px-1 text-[10px] font-normal ${positiveGrowth ? 'bg-green-100 text-green-500' : 'bg-red-100 text-red-500'}`}
+                    className={`rounded px-1 text-[10px] font-normal lg:px-2 ${positiveGrowth ? 'bg-green-100 text-green-500' : 'bg-red-100 text-red-500'}`}
                   >
                     {positiveGrowth ? '▲' : '▼'} {coinUsdChange24h.toFixed(2)}%
                   </span>
@@ -76,7 +76,7 @@ const TrendingCoins = ({trendingCoins}: Props) => {
                 </span>
                 <Image
                   src={coin?.item?.data?.sparkline}
-                  className='object-contain h-full w-full'
+                  className='h-full w-full object-contain'
                   layout='responsive'
                   width={100}
                   height={40}
@@ -88,7 +88,7 @@ const TrendingCoins = ({trendingCoins}: Props) => {
         })}
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default TrendingCoins
+export default TrendingCoins;

@@ -2,6 +2,20 @@
 import React, { useEffect, useState } from 'react';
 import TrendingCoins from './TrendingCoins';
 
+interface Coin {
+  item: {
+    thumb: string;
+    name: string;
+    data: {
+      price_change_percentage_24h: {
+        usd: number;
+      };
+      price: number;
+      sparkline: string;
+    };
+  };
+}
+
 const COINGECKO_TRENDING_COINS_API_URL =
   'https://api.coingecko.com/api/v3/search/trending';
 
