@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 
 const CoinChart = () => {
-  const container = useRef<HTMLElement>(null);
+  const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (container.current?.querySelector('script')) {
