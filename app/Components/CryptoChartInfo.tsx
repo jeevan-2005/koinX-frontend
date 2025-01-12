@@ -5,12 +5,10 @@ import bitcoinImg from '../../public/assests/bitcoinImg.png';
 import Image from 'next/image';
 import CoinChart from '../Components/CoinChart';
 
-type Props = {};
-
 const COINGECKO_URL =
   'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_24hr_change=true';
 
-const CryptoChartInfo = (props: Props) => {
+const CryptoChartInfo = () => {
   const [cryptoInfo, setCryptoInfo] = useState({
     dollarValue: 0,
     rupeeValue: 0,

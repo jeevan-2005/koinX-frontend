@@ -1,13 +1,11 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import TrendingCoins from './TrendingCoins.tsx';
-
-type Props = {};
+import TrendingCoins from './TrendingCoins';
 
 const COINGECKO_TRENDING_COINS_API_URL =
   'https://api.coingecko.com/api/v3/search/trending';
 
-const MoreCoinsData = (props: Props) => {
+const MoreCoinsData = () => {
   const [trendingCoins, setTrendingCoins] = useState<Coin[]>([]);
 
   useEffect(() => {

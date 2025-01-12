@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 import getStartedImg from '../../public/assests/getStarted.png';
 import Image from 'next/image';
 
-type Props = {};
-
 interface Coin {
   item: {
     thumb: string;
@@ -20,7 +18,7 @@ interface Coin {
 const COINGECKO_TRENDING_COINS_API_URL =
   'https://api.coingecko.com/api/v3/search/trending';
 
-const GetStarted = (props: Props) => {
+const GetStarted = () => {
   const [trendingCoins, setTrendingCoins] = useState<Coin[]>([]);
 
   useEffect(() => {

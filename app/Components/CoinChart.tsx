@@ -1,9 +1,7 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
 
-type Props = {};
-
-const CoinChart = (props: Props) => {
+const CoinChart = () => {
   const container = useRef<HTMLElement>(null);
 
   useEffect(() => {

@@ -3,9 +3,7 @@ import CoinCards from './CoinCards';
 import bcoinImg1 from '../../public/assests/bcoinImg1.png';
 import bcoinImg2 from '../../public/assests/bcoinImg2.png';
 
-type Props = {}
-
-const AboutBitcoin = (props: Props) => {
+const AboutBitcoin = () => {
   return (
     <div className='rounded-lg bg-white p-6 mt-7'>
         <h3 className='font-Poppins text-[22px] font-semibold mb-5'>About Bitcoin</h3>
