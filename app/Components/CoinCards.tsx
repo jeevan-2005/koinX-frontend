@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Card, Typography } from '@mui/joy';
+import { Card } from '@mui/joy';
 import Image from 'next/image';
 import React from 'react';
 
