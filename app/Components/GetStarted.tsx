@@ -54,7 +54,7 @@ const GetStarted = () => {
           Trending Coins (24h)
         </h3>
         <div className='flex flex-col gap-4'>
-          {trendingCoins.map((coin: Coin, index) => {
+          {trendingCoins.map((coin: Coin) => {
             const coinUsdChange24h =
               coin.item.data?.price_change_percentage_24h?.usd || 0;
             return (
